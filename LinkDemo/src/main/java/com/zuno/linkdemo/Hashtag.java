@@ -12,7 +12,6 @@ import android.widget.Toast;
  */
 public class Hashtag extends ClickableSpan{
     Context context;
-    TextPaint textPaint;
     public Hashtag(Context ctx) {
         super();
         context = ctx;
@@ -20,7 +19,6 @@ public class Hashtag extends ClickableSpan{
 
     @Override
     public void updateDrawState(TextPaint ds) {
-        textPaint = ds;
         ds.setColor(ds.linkColor);
         ds.setARGB(255, 30, 144, 255);
     }
